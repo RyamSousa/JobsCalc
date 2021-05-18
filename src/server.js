@@ -20,4 +20,4 @@ server.use(express.static('public'))
 server.use(routes)
 
 // iniciandp o servidor na porta 3000
-server.listen(3000, () => {console.log("rodando...")});
+server.listen(5000, () => {console.log("rodando...")});
