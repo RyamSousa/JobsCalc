@@ -10,6 +10,9 @@ const server = express()
 // setando ejs no server
 server.set('view engine', 'ejs')
 
+// Usabdo o req.body (liberando o body da requisição)
+server.use(express.urlencoded({extended: true}))
+
 // criando rotas dps arquivos estáticos da pasta public
 server.use(express.static('public'))
 
